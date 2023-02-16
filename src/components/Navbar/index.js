@@ -4,12 +4,14 @@ import styled from "styled-components";
 function Navbar() {
   return (
     <NavDiv>
-      <LogoText>
-        Shortly
-        <a href="/features">Features</a>
-        <a href="/features">Pricing</a>
-        <a href="/features">Resources</a>
-      </LogoText>
+      <div style={{ display: "flex" }}>
+        <Logo src="/logo.png" alt="img" />
+        <div>
+          <NavLink href="/features">Features</NavLink>
+          <NavLink href="/features">Pricing</NavLink>
+          <NavLink href="/features">Resources</NavLink>
+        </div>
+      </div>
 
       <div style={{ display: "flex" }}>
         <LoginBtn>
@@ -27,18 +29,19 @@ const NavDiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 `;
 
-const LogoText = styled.h3`
-  font-size: 30px;
-  color: hsl(255, 11%, 22%);
+const Logo = styled.img`
+  width: 100px;
+  height: 30px;
+`;
 
-  > a {
-    color: hsl(0, 0%, 75%);
-    font-size: 15px;
-    margin-left: 1rem;
-    text-decoration: none;
-  }
+const NavLink = styled.a`
+  color: hsl(0, 0%, 75%);
+  font-size: 15px;
+  margin-left: 1rem;
+  text-decoration: none;
 `;
 
 const LoginBtn = styled.button`
