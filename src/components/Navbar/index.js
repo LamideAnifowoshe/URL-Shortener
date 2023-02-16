@@ -1,26 +1,27 @@
-import React from "react";
 import styled from "styled-components";
+import React, { useState } from "react";
 
 function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <NavDiv>
       <div style={{ display: "flex" }}>
         <Logo src="/logo.png" alt="img" />
-        <div>
+        <NavLinkDiv>
           <NavLink href="/features">Features</NavLink>
           <NavLink href="/features">Pricing</NavLink>
           <NavLink href="/features">Resources</NavLink>
-        </div>
+        </NavLinkDiv>
       </div>
 
-      <div style={{ display: "flex" }}>
+      <NavBtnDiv>
         <LoginBtn>
           <h3>Login</h3>
         </LoginBtn>
         <SignupBtn>
           <h3>Sign Up</h3>
         </SignupBtn>
-      </div>
+      </NavBtnDiv>
     </NavDiv>
   );
 }
@@ -42,6 +43,22 @@ const NavLink = styled.a`
   font-size: 15px;
   margin-left: 1rem;
   text-decoration: none;
+`;
+
+const NavLinkDiv = styled.div`
+  display: flex;
+
+  @media (max-width: 728px) {
+    display: none;
+  }
+`;
+
+const NavBtnDiv = styled.div`
+  display: flex;
+
+  @media (max-width: 728px) {
+    display: none;
+  }
 `;
 
 const LoginBtn = styled.button`
@@ -73,6 +90,21 @@ const SignupBtn = styled.button`
     color: white;
     font-size: 15px;
   }
+`;
+
+const MobileNav = styled.div`
+  background-color: hsl(260, 8%, 14%);
+  width: 100px;
+  height: 200px;
+  margin: 2rem 5rem;
+  border: none;
+  border-radius: 10px;
+`;
+
+const MobileNavDiv = styled.div`
+  display: block;
+  text-align: center;
+  color: white;
 `;
 
 export default Navbar;
