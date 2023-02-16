@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React, { useState } from "react";
+import * as Icon from "react-feather";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -22,6 +23,10 @@ function Navbar() {
           <h3>Sign Up</h3>
         </SignupBtn>
       </NavBtnDiv>
+
+      <IconDiv>
+        <Icon.X />
+      </IconDiv>
     </NavDiv>
   );
 }
@@ -58,6 +63,14 @@ const NavBtnDiv = styled.div`
 
   @media (max-width: 728px) {
     display: none;
+  }
+`;
+
+const IconDiv = styled.div`
+  display: none;
+
+  @media (max-width: 728px) {
+    display: flex;
   }
 `;
 
