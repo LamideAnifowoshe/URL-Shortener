@@ -4,6 +4,11 @@ import * as Icon from "react-feather";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   return (
     <NavDiv>
       <div style={{ display: "flex" }}>
@@ -25,23 +30,25 @@ function Navbar() {
       </NavBtnDiv>
 
       <IconDiv>
-        <Icon.Menu />
-        <MenuDiv>
-          <MenuNavDiv>
-            <a href="/features">Features</a>
-          </MenuNavDiv>
-          <MenuNavDiv>
-            <a href="/features">Pricing</a>
-          </MenuNavDiv>
-          <MenuNavDiv>
-            <a href="/features">Resources</a>
-          </MenuNavDiv>{" "}
-          <hr />
-          <MenuNavDiv>
-            <a href="/features">Login</a>
-          </MenuNavDiv>
-          <MenuBtn>Sign Up</MenuBtn>
-        </MenuDiv>
+        <Icon.Menu onClick={() => toggleMenu()} style={{ cursor: "pointer" }} />
+        {navbarOpen ? (
+          <MenuDiv>
+            <MenuNavDiv>
+              <a href="/features">Features</a>
+            </MenuNavDiv>
+            <MenuNavDiv>
+              <a href="/features">Pricing</a>
+            </MenuNavDiv>
+            <MenuNavDiv>
+              <a href="/features">Resources</a>
+            </MenuNavDiv>{" "}
+            <hr />
+            <MenuNavDiv>
+              <a href="/features">Login</a>
+            </MenuNavDiv>
+            <MenuBtn>Sign Up</MenuBtn>
+          </MenuDiv>
+        ) : null}
       </IconDiv>
     </NavDiv>
   );
