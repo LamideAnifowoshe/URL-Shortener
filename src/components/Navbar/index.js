@@ -25,7 +25,23 @@ function Navbar() {
       </NavBtnDiv>
 
       <IconDiv>
-        <Icon.X />
+        <Icon.Menu />
+        <MenuDiv>
+          <MenuNavDiv>
+            <a href="/features">Features</a>
+          </MenuNavDiv>
+          <MenuNavDiv>
+            <a href="/features">Pricing</a>
+          </MenuNavDiv>
+          <MenuNavDiv>
+            <a href="/features">Resources</a>
+          </MenuNavDiv>{" "}
+          <hr />
+          <MenuNavDiv>
+            <a href="/features">Login</a>
+          </MenuNavDiv>
+          <MenuBtn>Sign Up</MenuBtn>
+        </MenuDiv>
       </IconDiv>
     </NavDiv>
   );
@@ -36,6 +52,7 @@ const NavDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  position: relative;
 `;
 
 const Logo = styled.img`
@@ -105,19 +122,41 @@ const SignupBtn = styled.button`
   }
 `;
 
-const MobileNav = styled.div`
+const MenuDiv = styled.div`
   background-color: hsl(260, 8%, 14%);
-  width: 100px;
-  height: 200px;
-  margin: 2rem 5rem;
+  margin: auto;
+  padding: 0 0 2rem 0;
   border: none;
   border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 3rem;
+  width: 100%;
 `;
 
-const MobileNavDiv = styled.div`
+const MenuNavDiv = styled.div`
   display: block;
   text-align: center;
+  margin: 2rem;
+
+  > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+`;
+
+const MenuBtn = styled.button`
+  display: block;
+  background-color: hsl(180, 66%, 49%);
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
   color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
 `;
 
 export default Navbar;
