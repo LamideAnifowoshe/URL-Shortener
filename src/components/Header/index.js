@@ -14,7 +14,7 @@ function Header() {
         </SignupBtn>
       </HeaderLeftDiv>
       <HeaderRightDiv>
-        <HeaderImg src="/illustration-working.png" alt="img" />
+        <HeaderImg src="/illustration-working.svg" alt="img" />
       </HeaderRightDiv>
     </HeaderDiv>
   );
@@ -23,6 +23,7 @@ function Header() {
 const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   @media (max-width: 728px) {
     flex-direction: column;
@@ -34,8 +35,11 @@ const HeaderDiv = styled.div`
 const HeaderLeftDiv = styled.div`
   width: 50%;
   margin: 2rem 0;
+
   @media (max-width: 728px) {
     width: 100%;
+    position: absolute;
+    top: 17rem;
   }
 `;
 
@@ -43,15 +47,19 @@ const HeaderRightDiv = styled.div`
   position: relative;
   width: 50%;
   box-sizing: border-box;
+
   @media (max-width: 728px) {
-    width: 100vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
   }
 `;
 
 const HeaderImg = styled.img`
   margin: auto;
+
   @media (max-width: 728px) {
-    width: 100vw;
+    width: 100%;
     height: 300px;
   }
 `;
