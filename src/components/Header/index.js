@@ -95,6 +95,7 @@ const SignupBtn = styled.button`
   align-items: center;
   border: none;
   border-radius: 50px;
+  cursor: pointer;
 
   > h3 {
     color: white;

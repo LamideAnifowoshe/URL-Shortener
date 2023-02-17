@@ -105,6 +105,7 @@ const LoginBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   > h3 {
     color: hsl(0, 0%, 75%);
@@ -120,6 +121,7 @@ const SignupBtn = styled.button`
   align-items: center;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 
   > h3 {
     color: white;
