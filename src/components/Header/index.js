@@ -57,9 +57,9 @@ const HeaderRightDiv = styled.div`
 
 const HeaderImg = styled.img`
   margin: auto;
+  width: 100%;
 
   @media (max-width: 728px) {
-    width: 100%;
     height: 300px;
   }
 `;
