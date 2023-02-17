@@ -101,8 +101,7 @@ const IconDiv = styled.div`
 const LoginBtn = styled.button`
   background-color: white;
   border: none;
-  width: 120px;
-  height: 40px;
+  padding: 0.2px 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,8 +114,7 @@ const LoginBtn = styled.button`
 
 const SignupBtn = styled.button`
   background-color: hsl(180, 66%, 49%);
-  width: 120px;
-  height: 40px;
+  padding: 0.2px 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

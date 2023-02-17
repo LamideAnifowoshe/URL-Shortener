@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 function App() {
   return (
     <AppDiv>
       <Navbar />
+      <Header />
     </AppDiv>
   );
 }
