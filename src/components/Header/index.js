@@ -23,19 +23,37 @@ function Header() {
 const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 728px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const HeaderLeftDiv = styled.div`
   width: 50%;
   margin: 2rem 0;
+  @media (max-width: 728px) {
+    width: 100%;
+  }
 `;
+
 const HeaderRightDiv = styled.div`
   position: relative;
   width: 50%;
+  box-sizing: border-box;
+  @media (max-width: 728px) {
+    width: 100vw;
+  }
 `;
 
 const HeaderImg = styled.img`
   margin: auto;
+  @media (max-width: 728px) {
+    width: 100vw;
+    height: 300px;
+  }
 `;
 
 const HeaderBigTxt = styled.h1`
@@ -43,11 +61,22 @@ const HeaderBigTxt = styled.h1`
   color: hsl(260, 8%, 14%);
   line-height: 5rem;
   margin-bottom: 0;
+
+  @media (max-width: 728px) {
+    font-size: 40px;
+    line-height: 3rem;
+    text-align: center;
+  }
 `;
 
 const HeaderSmallTxt = styled.h4`
   color: hsl(0, 0%, 75%);
   font-size: 25px;
+
+  @media (max-width: 728px) {
+    font-size: 18px;
+    text-align: center;
+  }
 `;
 
 const SignupBtn = styled.button`
@@ -62,6 +91,10 @@ const SignupBtn = styled.button`
   > h3 {
     color: white;
     font-size: 20px;
+  }
+
+  @media (max-width: 728px) {
+    margin: auto;
   }
 `;
 

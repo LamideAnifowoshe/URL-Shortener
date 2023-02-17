@@ -13,7 +13,7 @@ function App() {
 
 const AppDiv = styled.div`
   font-family: "Poppins", sans-serif;
-  width: 90%;
+  width: 90vw;
   margin: auto;
 `;
 
