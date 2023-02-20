@@ -17,6 +17,11 @@ const AppDiv = styled.div`
   font-family: "Poppins", sans-serif;
   width: 90vw;
   margin: auto;
+
+  @media (max-width: 728px) {
+    width: 80vw;
+    margin: auto;
+  }
 `;
 
 export default App;
