@@ -14,7 +14,7 @@ function LinkInput() {
 }
 
 const LinkDiv = styled.div`
-  margin: 2.5rem 0;
+  margin: 3rem 0;
   width: 100%;
   background-color: hsl(260, 8%, 14%);
   border: none;

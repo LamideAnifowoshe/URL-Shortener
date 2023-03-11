@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import LinkInput from "./components/LinkInput";
+import Advanced from "./components/Advanced";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Header />
       <LinkInput />
+      <Advanced />
     </AppDiv>
   );
 }
