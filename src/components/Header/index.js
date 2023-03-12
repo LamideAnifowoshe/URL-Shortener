@@ -87,7 +87,7 @@ const HeaderSmallTxt = styled.h4`
   }
 `;
 
-const SignupBtn = styled.button`
+export const SignupBtn = styled.button`
   background-color: hsl(180, 66%, 49%);
   padding: 0.2px 2.5rem;
   display: flex;

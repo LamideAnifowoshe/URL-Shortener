@@ -3,15 +3,19 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import LinkInput from "./components/LinkInput";
 import Advanced from "./components/Advanced";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <AppDiv>
-      <Navbar />
-      <Header />
-      <LinkInput />
-      <Advanced />
-    </AppDiv>
+    <div>
+      <AppDiv>
+        <Navbar />
+        <Header />
+        <LinkInput />
+        <Advanced />
+      </AppDiv>
+      <Footer />
+    </div>
   );
 }
 
