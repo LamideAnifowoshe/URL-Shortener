@@ -12,44 +12,44 @@ function Advanced() {
       </AdvancedHeaderDiv>
 
       <CardDivs>
-        <CardDiv>
-          <Card style={{ marginTop: "2rem" }}>
+        <CardDiv style={{ marginTop: "2rem" }}>
+          <Card>
             <HeaderTxt style={{ fontSize: "20px" }}>
               Brand Recognition
             </HeaderTxt>
             <HeaderSmallTxt>
-              Boost your brand recognition witheach click. Generic clicks don't
+              Boost your brand recognition with each click. Generic clicks don't
               mean a thing. Branded links help instil confidence in your
               content.
             </HeaderSmallTxt>
           </Card>
           <CardImg src="/icon-brand-recognition.png" alt="img" />
         </CardDiv>
+        <CardImg src="/icon-detailed-records.png" alt="img" />
 
-        <CardDiv>
-          <Card style={{ marginTop: "3rem" }}>
-            <HeaderTxt style={{ fontSize: "20px" }}>
-              Brand Recognitiom
-            </HeaderTxt>
+        <CardDiv style={{ marginTop: "4rem" }}>
+          <Card>
+            <HeaderTxt style={{ fontSize: "20px" }}>Detailed Records</HeaderTxt>
             <HeaderSmallTxt>
-              Boost your brand recognition witheach click. Generic clicks don't
-              mean a thing. Branded links help instil confidence in your
-              content.
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
             </HeaderSmallTxt>
           </Card>
+          <CardImg src="/icon-detailed-records.png" alt="img" />
         </CardDiv>
 
-        <CardDiv>
-          <Card style={{ marginTop: "4rem" }}>
+        <CardDiv style={{ marginTop: "6rem" }}>
+          <Card>
             <HeaderTxt style={{ fontSize: "20px" }}>
-              Brand Recognitiom
+              Fully Customizable
             </HeaderTxt>
             <HeaderSmallTxt>
-              Boost your brand recognition witheach click. Generic clicks don't
-              mean a thing. Branded links help instil confidence in your
-              content.
+              Improve brand awareness and content discoverability through
+              customizable links supercharging audience engagement.
             </HeaderSmallTxt>
           </Card>
+          <CardImg src="/icon-fully-customizable.png" alt="img" />
         </CardDiv>
       </CardDivs>
     </AdvancedDiv>
@@ -71,7 +71,7 @@ const HeaderTxt = styled.h1`
 
 const HeaderSmallTxt = styled.h4`
   color: hsl(0, 0%, 75%);
-  font-size: 18px;
+  font-size: 17px;
 `;
 
 const CardDivs = styled.div`
@@ -83,11 +83,11 @@ const CardDiv = styled.div`
   width: 30%;
   height: 200px;
   position: relative;
-  padding: 2rem;
+  padding: 2.5rem;
 `;
 
 const Card = styled.div`
-  padding: 2rem;
+  padding: 5rem 1rem 1rem 1rem;
   background-color: white;
   box-shadow: 5px 1px 1px 5px rgba(0, 0, 0, 0.1),
     5px 1px 1px 5px rgba(0, 0, 0, 0.1);
@@ -100,8 +100,8 @@ const CardImg = styled.img`
   border: none;
   border-radius: 50px;
   position: absolute;
-  top: 2px;
-  left: 7rem;
+  top: 0;
+  left: 3.5rem;
 `;
 
 export default Advanced;
