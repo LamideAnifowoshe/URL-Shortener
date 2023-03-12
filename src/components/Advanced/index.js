@@ -98,7 +98,7 @@ const CardDiv = styled.div`
   @media (max-width: 728px) {
     width: 100%;
     margin-top: 0 !important;
-    margin-bottom: 7rem;
+    margin-bottom: 10rem;
     padding: 2.5rem 0;
     text-align: center;
   }
