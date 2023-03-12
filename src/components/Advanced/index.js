@@ -25,7 +25,6 @@ function Advanced() {
           </Card>
           <CardImg src="/icon-brand-recognition.png" alt="img" />
         </CardDiv>
-        <CardImg src="/icon-detailed-records.png" alt="img" />
 
         <CardDiv style={{ marginTop: "4rem" }}>
           <Card>
@@ -58,6 +57,13 @@ function Advanced() {
 
 const AdvancedDiv = styled.div`
   margin: 3rem 0;
+
+  @media (max-width: 728px) {
+    position: absolute;
+    top: 60rem;
+    width: 80%;
+    margin: auto;
+  }
 `;
 
 const AdvancedHeaderDiv = styled.div`
@@ -77,6 +83,10 @@ const HeaderSmallTxt = styled.h4`
 const CardDivs = styled.div`
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 728px) {
+    flex-direction: column;
+  }
 `;
 
 const CardDiv = styled.div`
@@ -84,6 +94,14 @@ const CardDiv = styled.div`
   height: 200px;
   position: relative;
   padding: 2.5rem;
+
+  @media (max-width: 728px) {
+    width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 7rem;
+    padding: 2.5rem 0;
+    text-align: center;
+  }
 `;
 
 const Card = styled.div`
@@ -102,6 +120,11 @@ const CardImg = styled.img`
   position: absolute;
   top: 0;
   left: 3.5rem;
+
+  @media (max-width: 728px) {
+    left: 35%;
+    padding: 1rem;
+  }
 `;
 
 export default Advanced;
