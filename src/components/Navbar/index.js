@@ -139,6 +139,7 @@ const MenuDiv = styled.div`
   right: 0;
   top: 3rem;
   width: 100%;
+  z-index: 10;
 `;
 
 const MenuNavDiv = styled.div`
