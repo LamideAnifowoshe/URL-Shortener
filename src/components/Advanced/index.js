@@ -73,6 +73,10 @@ const AdvancedHeaderDiv = styled.div`
 const HeaderTxt = styled.h1`
   font-size: 30px;
   color: hsl(260, 8%, 14%);
+
+  @media (max-width: 728px) {
+    font-size: 25px;
+  }
 `;
 
 const HeaderSmallTxt = styled.h4`
@@ -86,6 +90,7 @@ const CardDivs = styled.div`
 
   @media (max-width: 728px) {
     flex-direction: column;
+    margin-top: 2rem;
   }
 `;
 

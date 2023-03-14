@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{ fontWeight: 500 }}>
       <AppDiv>
         <Navbar />
         <Header />

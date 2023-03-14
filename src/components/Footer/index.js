@@ -134,7 +134,8 @@ const FooterLink = styled.a`
   padding-top: 1rem;
 
   @media (max-width: 728px) {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 300;
   }
 `;
 

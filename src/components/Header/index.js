@@ -9,7 +9,7 @@ function Header() {
           Build your brands recognition and get detailed insights on how your
           links are performing.
         </HeaderSmallTxt>
-        <SignupBtn>
+        <SignupBtn style={{ width: "190px", height: "55px" }}>
           <h3>Get Started</h3>
         </SignupBtn>
       </HeaderLeftDiv>
