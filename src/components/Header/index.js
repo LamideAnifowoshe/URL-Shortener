@@ -14,7 +14,7 @@ function Header() {
         </SignupBtn>
       </HeaderLeftDiv>
       <HeaderRightDiv>
-        <HeaderImg src="/illustration-working.svg" alt="img" />
+        <HeaderImg src="/images/illustration-working.svg" alt="img" />
       </HeaderRightDiv>
     </HeaderDiv>
   );

@@ -23,7 +23,7 @@ function Advanced() {
               content.
             </HeaderSmallTxt>
           </Card>
-          <CardImg src="/icon-brand-recognition.png" alt="img" />
+          <CardImg src="/images/icon-brand-recognition.png" alt="img" />
         </CardDiv>
 
         <CardDiv style={{ marginTop: "4rem" }}>
@@ -35,7 +35,7 @@ function Advanced() {
               decisions.
             </HeaderSmallTxt>
           </Card>
-          <CardImg src="/icon-detailed-records.png" alt="img" />
+          <CardImg src="/images/icon-detailed-records.png" alt="img" />
         </CardDiv>
 
         <CardDiv style={{ marginTop: "6rem" }}>
@@ -48,7 +48,7 @@ function Advanced() {
               customizable links supercharging audience engagement.
             </HeaderSmallTxt>
           </Card>
-          <CardImg src="/icon-fully-customizable.png" alt="img" />
+          <CardImg src="/images/icon-fully-customizable.png" alt="img" />
         </CardDiv>
       </CardDivs>
     </AdvancedDiv>

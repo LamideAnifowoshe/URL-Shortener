@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <NavDiv>
       <div style={{ display: "flex" }}>
-        <Logo src="/logo.png" alt="img" />
+        <Logo src="/images/logo.png" alt="img" />
         <NavLinkDiv>
           <NavLink href="/features">Features</NavLink>
           <NavLink href="/features">Pricing</NavLink>
