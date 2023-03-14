@@ -49,7 +49,7 @@ function Footer() {
 }
 
 const FooterDiv = styled.div`
-  margin: 12rem 0;
+  margin: 12rem 0 0 0;
   color: white;
   width: 100vw;
   font-family: "Poppins", sans-serif;
@@ -74,11 +74,11 @@ const FooterDiv1 = styled.div`
 `;
 
 const FooterDiv2 = styled.div`
-  background-color: #2e2e2e;
+  background-color: #171717;
   display: flex;
-  padding: 2rem;
+  padding: 4rem;
   justify-content: space-around;
-  height: 350px;
+  height: 200px;
 `;
 
 const FooterLinkDiv = styled.div`
@@ -90,6 +90,7 @@ const FooterLinkDiv = styled.div`
 
 const FooterLinkHeader = styled.h4`
   font-size: 20px;
+  margin: 0;
 `;
 
 const FooterLink = styled.a`
@@ -104,8 +105,8 @@ const FooterIconDiv = styled.div`
 `;
 
 const FooterIcon = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   padding-left: 2rem;
 `;
 
