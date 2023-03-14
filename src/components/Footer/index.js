@@ -6,8 +6,8 @@ function Footer() {
     <FooterDiv>
       <FooterImg>
         <FooterDiv1>
-          <h1 style={{ fontSize: "40px" }}>Boost your links today</h1>
-          <SignupBtn>
+          <H1>Boost your links today</H1>
+          <SignupBtn style={{ width: "190px", height: "55px" }}>
             <h3>Get Started</h3>
           </SignupBtn>
         </FooterDiv1>
@@ -53,6 +53,20 @@ const FooterDiv = styled.div`
   color: white;
   width: 100vw;
   font-family: "Poppins", sans-serif;
+
+  @media (max-width: 728px) {
+    position: absolute;
+    top: 160rem;
+    margin: 0;
+  }
+`;
+
+const H1 = styled.h1`
+  font-size: 40px;
+
+  @media (max-width: 728px) {
+    font-size: 25px;
+  }
 `;
 
 const FooterImg = styled.div`
@@ -63,6 +77,10 @@ const FooterImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 728px) {
+    background-image: url("/images/bg-boost-mobile.png");
+  }
 `;
 
 const FooterDiv1 = styled.div`
@@ -79,6 +97,14 @@ const FooterDiv2 = styled.div`
   padding: 4rem;
   justify-content: space-around;
   height: 200px;
+
+  @media (max-width: 728px) {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
 `;
 
 const FooterLinkDiv = styled.div`
@@ -86,11 +112,19 @@ const FooterLinkDiv = styled.div`
   flex-direction: column;
   padding: 0;
   margin: 0;
+
+  @media (max-width: 728px) {
+    padding-top: 1.5rem;
+  }
 `;
 
 const FooterLinkHeader = styled.h4`
   font-size: 20px;
   margin: 0;
+
+  @media (max-width: 728px) {
+    font-size: 15px;
+  }
 `;
 
 const FooterLink = styled.a`
@@ -98,16 +132,30 @@ const FooterLink = styled.a`
   font-size: 15px;
   color: white;
   padding-top: 1rem;
+
+  @media (max-width: 728px) {
+    font-size: 10px;
+  }
 `;
 
 const FooterIconDiv = styled.div`
   display: flex;
+
+  @media (max-width: 728px) {
+    padding-top: 1.5rem;
+  }
 `;
 
 const FooterIcon = styled.img`
   width: 25px;
   height: 25px;
   padding-left: 2rem;
+
+  @media (max-width: 728px) {
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+  }
 `;
 
 export default Footer;
