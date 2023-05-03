@@ -1,11 +1,29 @@
 import styled from "styled-components";
+import { useState } from "react";
+import axios from "axios";
 
 function LinkInput() {
+  const [initialLink, setInitialLink] = useState("");
+
+  async function LinkShortener() {
+    try {
+      const link = initialLink;
+      const res = await axios.post("https://app.shrtco.de/", link);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <LinkDiv>
-      <FormDiv method="POST">
-        <InputDiv placeholder="Shorten a link here..." />
-        <LinkSubmitBtn>
+      <FormDiv>
+        <InputDiv
+          placeholder="Shorten a link here..."
+          type="text"
+          onChange={(e) => setInitialLink(e.target.value)}
+        />
+        <LinkSubmitBtn onClick={(e) => LinkShortener(e)}>
           <h3>Shorten it!</h3>
         </LinkSubmitBtn>
       </FormDiv>
